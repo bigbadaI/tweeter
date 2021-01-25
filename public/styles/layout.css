@@ -15,11 +15,24 @@ html {
  */
 
 body {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
   color: #545149;
   background-color: #f4f1ec;
   font-size: 24px;
+  flex-basis: 90%;
+}
+
+main {
+  flex-shrink: 2;
+  justify-content: center;
+  color: #545149;
 }
 
 /*
  * Additional CSS can be defined below or in other CSS files, as per instructions
  */
+ body {
+  font-family: 'Source Sans Pro', sans-serif;
+ }
