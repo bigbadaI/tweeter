@@ -1,0 +1,10 @@
+
+
+nav {
+  height: 120;
+  width: auto;
+  background-color: #4056A1;
+  color: #FFFFFF;
+  font-family:  'Bungee', sans-serif;
+  column-span: 1.5em;
+}
