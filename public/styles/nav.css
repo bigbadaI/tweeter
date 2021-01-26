@@ -1,10 +1,34 @@
 
 
 nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
   height: 120;
-  width: auto;
+  width: 100%;
   background-color: #4056A1;
   color: #FFFFFF;
   font-family:  'Bungee', sans-serif;
   column-span: 1.5em;
+  padding: 1.5em;
+}
+
+.nav-header-arrow {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Source Sans Pro', sans-serif;
+  
+}
+
+.nav-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-arrow {
+  height: auto;
+  width: 15px;
 }
