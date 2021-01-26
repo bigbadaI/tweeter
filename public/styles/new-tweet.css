@@ -2,9 +2,7 @@ main {
   font-family: 'Source Sans Pro', sans-serif;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: space-around;
-  
 }
 
 button {
@@ -23,18 +21,17 @@ button {
   justify-content: space-between;
 }
 
-input {
+textarea {
   width: 90%;
       background: transparent;
       border: 0;
       border-bottom: 3px solid;
-      padding: 1em 0 ;
       text-align: center;
       font-size: 18px;
       font-weight: 300;
-      line-height: 1.5;
       color: inherit;
       outline: none;
+      flex-basis: 90%;
   }
 
 .counter {

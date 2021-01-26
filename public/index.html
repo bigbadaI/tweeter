@@ -33,7 +33,13 @@
   <body>
     <!-- Top nav bar (fixed) -->
     <nav>
-      <span>tweeter</span>
+      <div class="nav-header">      
+        <span class="tweeter-title">tweeter</span>
+        <div class="nav-header-arrow">
+        <span><b>Write</b> a new tweet</span>
+        <img class="nav-arrow" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAAXNSR0IArs4c6QAAAERlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAA6ABAAMAAAABAAEAAKACAAQAAAABAAAAQKADAAQAAAABAAAAQAAAAABGUUKwAAAEbklEQVR4Ae2ZTU8TQRiAZ2YBIUBpAS2YUJa0piRNvKiJ4hcHlSse/AEm/gGJ0as3PZAYD964cTItiQcPkJhw9WZiQuJBTfGmCbWtEii0u8676ZRt2e1+zcx2E+fS3ZnZeed5mJ2dGRD6n9oNzM3NZdMp9SnNxe0l0b3L5XIDmZT6IpVKJTopFHMGwBNN36bo98fjib7flfK2uTyK1wB/8Hf/LWV6pGByZ3Qslq9UKoeMpSWgBY/QdLPwVtQlMHg6lJebTOcJxneHR0cK1Wr1APIMARbwzfooshIs4A0mKmNaIaQlQekCH1kJdvAMCCQQndwbiY3klYlYfJW+HzdZoc1vZEaCEzzjwwRN9xP8SxlLxLeIhi5RCRdYoc1vz0twC2/wYfT62+7uc6VcLtfHxuMbUZfgGb5YfExF6MYkGHUJfuFhJLQ+g1GVEAS+TQDcRE1CUPhTAqIkgQe8pYAoSOAFbyvALIFeX6YLhwzkdUnSPpE84YGnNQlawcGcEE/EN2hZT0jgDe8oACr0igQR8K4E9IIEUfCuBYQpQSS8JwFhSBAN71mATAky4H0JkCFBFrxvASIlyIQPJMAsgejaFYRx4MWSbPjAApiEsUSiEFRCGPBcBPCQEBY8NwFBJIQJD/2m+xy+SVXVQUXT3iFMlpxaxjp6qWE0TzvBzu3tH4EzvOYxln0l7yWnNkPpdHpmIhZ7UKpUPnlvrnmo4nZOwOgGhZ93jBMcnqRnZ1dmBgc//9zfPzbHI+YbgG/UG9s6wmsZVYVDQ1+pWCweNghZRrq25asB80Mc4DOz6hod7Kt/BobeX0wmh83Nt0YAg6cZ6WaFpYlEvFoqlz+aH3B7bRyvuR0Jdo1ygtcRegghMEZqjfQvpIbOFNhIMARYwLMuhSeBMzwDAgnHfX3X6euQBwlKF3j2jHwJguAZEB0LLQlKIhZ7QxBePCm0vJInQTg848PqkdJfVc5NTX04rjdu09lwhhXZ/IqXIA0eCPX17z92nyl7e3tHyalkPnQJkuHp/wVhYmwYk2DoEkKCh3FA1yEnKZvNjtYOa5vUysJJrvUVnU1XvhaLr6xLnXNVtmIk5EvAFR6B7zz71HWPrK+zvzyr1yYAMmVKgH3Azs4OrMxo/32lQPAQ8ZQAyJQpAeL5TIHhIa4xB3R2QOac0Bnb5T0XeIhlKQAKelgCN/iuApiEybOThYamCV8nQDwXiSs8xLMdAawzpVKp1iMSuMO7EgCVekCCEHjXAkKWIAzek4CQJAiF9yxAsgTh8L4ESJIgBd63ALMEraEt0n0Bz620NPhAAkwS8hwlSIUPLICzBOnwXARwkhAKPDcBASWEBg/9ttwOQ4HflMlkYo2j+ibB6JpzG/oTjHDO72GGc/vONbgLgJDeJDh3Eg4wO09y3Dzlpo4QARCYnwRx8NBPYQL4SBALL1wAk6DX6luIoKtw7z6Jh4e+CB0BDBZeB28S5MBLEwCB3EuQBy9VgDsJcuGlC+guQT58KAKsJYQDD335B6SWi+RjhTk1AAAAAElFTkSuQmCC" alt="">
+      </div>
+      </div>
     </nav>
     <header>
       <div>
@@ -47,20 +53,23 @@
 
     <!-- Page-specific (main) content here -->
     <main class="container">
+      <div></div>
       <section class="new-tweet">
         <h2>Compose Tweet</h2>
         <div class="tweet">
         <form method="POST" action="/tweets/">
           <label for="tweet-text">What are you humming about?</label>
-          <input class="input" type="text" name="tweet-text">
+          <textarea name="text" id="tweet-text"></textarea>
         </div>
           <div class="button">
             <button type="submit">TWEET</button>
             <output name="counter" class="counter" for="tweet-text">140</output>
           </div>
+          
         </form>
       </section>
-      <p>Ok just some writing what happens If we go supper long can we just keep going and cause it to take up another row on us and not touch the edges of the page. Like if Batman and the Joker ever reconsiled where would the go for a drink to look back on all the old times</p>
+      <article>Ok just some writing what happens If we go supper long Ok just some writing what happens If we go supper long Ok just some writing what happens If we go supper long Ok just some writing what happens If we go supper long Ok just some writing what happens If we go supper long Ok just some writing what happens If we go supper long Ok just some writing what happens If we go supper long Ok just some writing what happens If we go supper long Ok just some writing what happens If we go supper long <article>
+        <div></div>
   </main>
   </body>
 </html>
