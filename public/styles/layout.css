@@ -22,20 +22,27 @@ body {
   font-size: 24px;
 }
 
+
+/*
+* Additional CSS can be defined below or in other CSS files, as per instructions
+*/
 .container {
   flex-basis: 90%;
   justify-content: center;
   color: #545149;
   margin: 0 5%;
+  font-family: 'Source Sans Pro', sans-serif;
 }
-
-/*
- * Additional CSS can be defined below or in other CSS files, as per instructions
- */
  body {
   font-family: 'Source Sans Pro', sans-serif;
  }
-
  article {
-   flex-shrink: 10%;
+   border-color: black;
+   border-style: solid;
+   margin-top: 10px;
+   transition: box-shadow .3s
+ }
+
+ article:hover {
+   box-shadow: 5px 5px 3px rgb(87, 81, 81);
  }
