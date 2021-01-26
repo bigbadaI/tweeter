@@ -1,5 +1,3 @@
-
-
 nav {
   display: flex;
   flex-direction: column;
@@ -20,7 +18,6 @@ nav {
   flex-direction: column;
   align-items: center;
   font-family: 'Source Sans Pro', sans-serif;
-  
 }
 
 .nav-header {

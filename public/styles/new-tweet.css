@@ -14,7 +14,6 @@ button {
   float: left
 }
 
-
 .button {
   padding-top: 0.5em;
   display: flex;
@@ -38,4 +37,7 @@ textarea {
   font-family: 'Bungee';
   /* right: 0; */
   align-self: flex-end;
+}
+.negative {
+  color: red;
 }
