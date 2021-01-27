@@ -5,7 +5,7 @@
  * Reminder: Use (and do all your DOM work in) jQuery's document ready function
  */
 // eslint-disable-next-line no-undef
-$(document).ready(function () {
+$(document).ready(function() {
   const data = [
     {
       "user": {
@@ -31,7 +31,7 @@ $(document).ready(function () {
       "created_at": 1461113959088
     }
   ];
-
+  //takes an array of tweets and uses a callback to break down the array to each individaul tweet
   const renderTweets = function(tweets) {
     let answer = {};
     tweets.forEach(element => {
@@ -41,7 +41,7 @@ $(document).ready(function () {
   };
 
 
-
+  //changes the tweet object into html text for rendering on the page
   const createTweetElement = function(data) {
     let $tweet = $('<article></article');
     let newHeader = $(`<header><img src=${data.user.avatars}><h2>${data.user.handle}</h2>`);
@@ -57,7 +57,6 @@ $(document).ready(function () {
     $tweet.append(newBody);
     $tweet.append(breakLine);
     $tweet.append(newFooter);
-    console.log($tweet);
     return $tweet;
   };
 
