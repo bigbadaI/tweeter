@@ -12,9 +12,12 @@ nav {
   column-span: 1.5em;
   padding: 1.5em;
   margin-bottom: 0%;
+  min-width: 375px;
 }
 
-.nav-header-arrow {
+.nav-header-arrow a {
+  text-decoration: none;
+  color: #FFFFFF;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -26,7 +29,50 @@ nav {
   justify-content: space-between;
 }
 
-.nav-arrow {
-  height: auto;
-  width: 15px;
+@keyframes bounce {
+  0%, 100%, 20%, 50%, 80% {
+   -webkit-transform: translateY(0);
+   -ms-transform:     translateY(0);
+   transform:         translateY(0)
+  }
+  40% {
+   -webkit-transform: translateY(-10px);
+   -ms-transform:     translateY(-10px);
+   transform:         translateY(-10px)
+  }
+  60% {
+   -webkit-transform: translateY(-5px);
+   -ms-transform:     translateY(-5px);
+   transform:         translateY(-5px)
+  }
+ }
+ nav i { 
+   color: red;
+   -webkit-animation-duration: 1s;
+   animation-duration: 1s;
+   -webkit-animation-fill-mode: both;
+   animation-fill-mode: both;
+   -webkit-animation-timing-function: ease-in-out;
+   animation-timing-function: ease-in-out;
+   animation-iteration-count: infinite;
+   -webkit-animation-iteration-count: infinite;
+ }
+nav i:hover {
+  cursor: pointer;
+  animation-name: bounce;
+  -moz-animation-name: bounce;
+}
+
+
+@media only screen and (max-width: 1023px) {
+  nav {
+  background-color: transparent;
+  color: darkgray
+  }
+  nav i {
+    color: darkgray
+  }
+ .nav-header-arrow a {
+   color: darkgrey
+ }
 }
