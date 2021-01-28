@@ -4,12 +4,12 @@ nav {
   justify-content: space-between;
   position: fixed;
   top: 0;
-  height: 120;
+  height: 120px;
   width: 100%;
   background-color: #4056A1;
   color: #FFFFFF;
   font-family:  'Bungee', sans-serif;
-  column-span: 1.5em;
+  
   padding: 1.5em;
   margin-bottom: 0%;
   min-width: 375px;
@@ -67,12 +67,12 @@ nav i:hover {
 @media only screen and (max-width: 1023px) {
   nav {
   background-color: transparent;
-  color: darkgray
+  color: rgb(92, 90, 90)
   }
   nav i {
-    color: darkgray
+    color: rgb(92, 90, 90)
   }
  .nav-header-arrow a {
-   color: darkgrey
+   color: rgb(92, 90, 90)
  }
 }
