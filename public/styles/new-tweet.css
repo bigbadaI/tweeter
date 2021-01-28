@@ -31,13 +31,13 @@ textarea {
       color: inherit;
       outline: none;
       flex-basis: 90%;
-  }
+}
 
 .counter {
   font-family: 'Bungee';
-  /* right: 0; */
   align-self: flex-end;
 }
+
 .negative {
   color: red;
 }
