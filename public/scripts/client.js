@@ -31,6 +31,13 @@ $(document).ready(function() {
       "created_at": 1461113959088
     }
   ];
+
+
+
+
+
+
+
   //takes an array of tweets and uses a callback to break down the array to each individaul tweet
   const renderTweets = function(tweets) {
     let answer = {};
@@ -52,7 +59,7 @@ $(document).ready(function() {
     <i class="fas fa-retweet"></i>
     <i class="fas fa-heart"></i>
     <i class="fab fa-font-awesome-flag"></i>
-  </div></div>`);
+    </div></div>`);
     $tweet.append(newHeader);
     $tweet.append(newBody);
     $tweet.append(breakLine);
@@ -60,6 +67,28 @@ $(document).ready(function() {
     return $tweet;
   };
 
-  renderTweets(data);
+
+  $("form").on("submit", function(event) {
+    event.preventDefault();
+    console.log($(this).serialize());
+    $.ajax({
+      type: "POST",
+      url: 'http://localhost:8080/tweets',
+      data: $(this).serialize()
+    });
+  });
+
+  const loadTweets = function() {
+    $.ajax('http://localhost:8080/tweets', { method: 'GET' })
+      .then(function(moretweets) {
+        renderTweets(moretweets);
+        // return moretweets;
+      });
+
+  };
+  // renderTweets(data);
+  loadTweets();
+
+
 
 });
