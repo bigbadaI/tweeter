@@ -26,6 +26,11 @@ body {
 /*
 * Additional CSS can be defined below or in other CSS files, as per instructions
 */
+/* div .tweets {
+  width: 10em;
+  word-wrap: break-word
+} */
+
 .container {
   padding-bottom: 5px;
   flex-basis: 90%;
@@ -44,6 +49,7 @@ body {
    border-style: solid;
    margin-top: 10px;
    transition: box-shadow .3s;
+   word-wrap: break-word
  }
  article header {
    display: flex;
@@ -71,4 +77,14 @@ body {
 
  article:hover h2{
    opacity: 50%;
+ }
+
+ .error-message {
+   display: none;
+   border: red;
+   border-style: solid;
+   border-width: 2px;
+   background-color: rgb(204, 160, 160);
+   color: red;
+
  }
