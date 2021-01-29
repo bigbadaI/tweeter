@@ -27,10 +27,8 @@ textarea {
       border-bottom: 3px solid;
       text-align: center;
       font-size: 18px;
-      font-weight: 300;
       color: inherit;
       outline: none;
-      flex-basis: 90%;
 }
 
 .counter {

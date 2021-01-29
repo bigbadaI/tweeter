@@ -5,14 +5,13 @@ nav {
   position: fixed;
   top: 0;
   height: 120px;
-  width: 100%;
+  width: 100vw;
   background-color: #4056A1;
   color: #FFFFFF;
   font-family:  'Bungee', sans-serif;
   
   padding: 1.5em;
   margin-bottom: 0%;
-  min-width: 375px;
 }
 
 .nav-header-arrow a {
@@ -75,7 +74,7 @@ nav {
   nav i {
     color: rgb(92, 90, 90)
   }
-  
+
  .nav-header-arrow a {
    color: rgb(92, 90, 90)
  }
