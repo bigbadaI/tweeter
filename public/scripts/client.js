@@ -70,7 +70,7 @@ $(document).ready(function() {
     let words = data.content.text;
     let newWords = words.replace(/(<([^>]+)>)/gi, "").trim();
     let $tweet = $('<article></article');
-    let newHeader = $(`<header><img src=${data.user.avatars}><h2>${data.user.handle}</h2>`);
+    let newHeader = $(`<header><div><img src=${data.user.avatars}><h2>${data.user.name}<h2></div><h2 class="handle">${data.user.handle}</h2></header>`);
     let newBody = $(`<body><p>${newWords}</p></body>`);
     let breakLine = $('<hr>');
     let newFooter = $(`<div class="footer"><p>${timeAgo(data.created_at)}</p>      

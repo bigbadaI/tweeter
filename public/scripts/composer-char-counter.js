@@ -12,7 +12,7 @@ $(document).ready(function() {
     if ((140 - workingStr.length) >= 0) {
       $('.counter').removeClass("negative");
     }
-    if ((140 - workingStr.length) > 0 && (140 - workingStr.length) < 140) {
+    if ((140 - workingStr.length) >= 0 && (140 - workingStr.length) < 140) {
       $('.error-message').slideUp();
     }
     $('output.counter').text(140 - workingStr.length);

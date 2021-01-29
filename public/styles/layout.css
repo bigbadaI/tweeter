@@ -55,18 +55,28 @@ body {
  }
 
  article header {
+   color:inherit;
    display: flex;
    padding-top: 5px;
    flex-direction: row;
-   align-items: center;
+   align-items: flex-start;
    justify-content: space-between;
    background-color: #f4f1ec;
    background-image: none;
  }
 
- article header h2 {
+ article header div {
+   display: flex;
+   align-items: center;
+ }
+ article img {
+   height: 3em;
+ }
+ 
+ article header .handle {
    color: gray;
    opacity: 0;
+   float: right;
  }
  
   article .footer {
@@ -79,7 +89,7 @@ body {
    box-shadow: 5px 5px 3px rgb(87, 81, 81);
  }
 
- article:hover h2{
+ article:hover .handle{
    opacity: 50%;
  }
 
